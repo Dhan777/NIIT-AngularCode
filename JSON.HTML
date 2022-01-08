@@ -1,0 +1,25 @@
+<html>
+ <head
+   <title>Angular Code</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+  <script>
+  var app = angular.module('result', []);
+app.controller('resultCtrl', function($scope) {
+$scope.marks = { 
+        "Math" : 98,"Computer" : 93,"Physics" : 95,"Chemistry" : 95,"English" : 74
+    };
+});
+</script>
+ </head>
+  <Body>
+    <div ng-app="result" ng-controller="resultCtrl">
+    	
+<h1>Result:</h1>
+<pre>{{marks}}</pre>
+  <br>
+<pre>{{marks | json}}</pre>
+  
+</div>
+ </Body>
+</html>
